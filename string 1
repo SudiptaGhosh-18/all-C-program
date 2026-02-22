@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+	char str[]={'c','h','a','r','e','c','t','e','r'};
+	printf("%s",str);
+	return 0;
+}
