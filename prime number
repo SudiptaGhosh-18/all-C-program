@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+	int i,n,flag=0;
+	printf("ENTER A DIGIT:");
+	scanf("%d",&n);
+	if(n==0 || n==1)
+	flag=1;
+	for(i=2;i<=n/2;i++)
+	{
+		if(n%i==0)
+		{
+				flag=1;
+		break;
+	}
+	}
+	if(flag==0)
+	printf("%d IS PRIME NUMBER",n);
+	else 
+	printf("%d IS NON-PRIME NUMBER",n);
+	return 0;
+}
