@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *ptr=(int*)malloc(sizeof(int));
+	if(ptr==NULL)
+	{
+		printf("NO MEMORY HAS ALLOCATED");
+		exit(0);
+	}
+	*ptr=50;
+	printf("%d",*ptr);
+	return 0;
+}
