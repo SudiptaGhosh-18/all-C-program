@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int opt,n=4;
+	printf("1. CHECK EVEN OR ODD\n");
+	printf("\n2. CHECK NEGATIVE OR POSITIVE");
+	printf("\n 3.EXIT\n");
+	printf("\nENTER YOUR CHOICE\n");
+	scanf("%d",&opt);
+	switch(opt)
+	{
+		case 1:
+			if(n%2==0)
+			printf("%d IS A EVEN NUMBER",n);
+			else
+			printf("%d IS A ODD NUMBER",n);
+			break;
+			case 2:
+				if(n<0)
+				printf("%d IS A NEGATIVE",n);
+				else
+				printf("%d IS A POSITIVE",n);
+				break;
+				case 3: 
+				printf("EXIT");
+	}
+	return 0;
+}
